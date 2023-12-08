@@ -1,5 +1,7 @@
 ﻿namespace ProyectoP2Final;
 using ProyectoP2Final.DataAccess;
+using ProyectoP2Final.ViewModels;
+using ProyectoP2Final.Views;
 public static class MauiProgram
 {
 	public static MauiApp CreateMauiApp()
@@ -16,6 +18,16 @@ public static class MauiProgram
 		dbContext.Database.EnsureCreated();
 		dbContext.Dispose();
 
-		return builder.Build();
+		builder.Services.AddDbContext<ReservaDbContext>();
+
+		builder.Services.AddTransient<ReservaPage>();
+        builder.Services.AddTransient<ReservaViewModel>();
+
+        builder.Services.AddTransient<MainPage>();
+        builder.Services.AddTransient<MainViewModel>();
+
+		Routing.RegisterRoute(nameof(ReservaPage), typeof(ReservaPage));
+
+        return builder.Build();
 	}
 }

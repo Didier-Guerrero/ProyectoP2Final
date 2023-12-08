@@ -6,7 +6,6 @@ namespace ProyectoP2Final.Models
         [Key]
         public int IdReserva { get; set; }
         public String Nombre { get; set; }
-        public String Apeliido { get; set; }
         [MaxLength(10)]
         public String Cedula { get; set; }
         public int NumeroHuespedes { get; set; }

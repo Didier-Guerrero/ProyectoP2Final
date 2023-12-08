@@ -10,12 +10,12 @@ namespace ProyectoP2Final.DTOs
         [ObservableProperty]
         public String nombre;
         [ObservableProperty]
-        public String apeliido;
-        [ObservableProperty]
         public String cedula;
         [ObservableProperty]
         public int numeroHuespedes;
         [ObservableProperty]
         public DateTime fechaEntrada;
+        [ObservableProperty]
+        public DateTime fechaSalida;
     }
 }
