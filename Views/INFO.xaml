@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoP2Final.Views.INFO"
+             Title="About Us">
+    <ScrollView>
+        <AbsoluteLayout>
+            <Image Source="tuki.jpg"
+                   Aspect="AspectFill"
+                   Opacity="0.8"
+                   AbsoluteLayout.LayoutFlags="All"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"/>
+
+            <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" Padding="20">
+                <Label FontFamily="Lobster"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="En Tuki Hotel, aspiramos a ser más que un simple lugar para alojarse;&#x0a;&#x0a; nos esforzamos por ser la experiencia definitiva que convierte cada estancia en un recuerdo inolvidable. " FontAttributes="Italic"/>
+                            <Span Text="Nuestra visión es crear un santuario de lujo y comodidad, donde la elegancia se encuentre con la hospitalidad de manera armoniosa.&#x0a;&#x0a; " />
+                            <Span Text="En Tuki Hotel, no solo proporcionamos habitaciones exquisitamente diseñadas, sino que ofrecemos un ambiente acogedor que refleja la riqueza cultural y la calidez de nuestra comunidad." FontAttributes="Italic"/>
+                            <Span Text="Buscamos ser un refugio para viajeros exigentes, brindándoles una experiencia única que va más allá de las expectativas convencionales. " FontAttributes="Italic"/>
+                            <Span Text="Nos esforzamos por deleitar a nuestros huéspedes con un servicio excepcional, atención personalizada y detalles cuidadosamente curados.&#x0a;&#x0a; " FontAttributes="Italic" />
+                            <Span Text="En Tuki Hotel, cada rincón está impregnado de sofisticación y encanto, desde nuestras elegantes habitaciones hasta nuestros espacios públicos vibrantes." FontAttributes="Italic" />
+                            <Span Text="Nuestra visión es ser reconocidos no solo por la calidad de nuestras instalaciones y servicios, sino también por la conexión emocional que establecemos con nuestros huéspedes. " FontAttributes="Italic"/>
+                            <Span Text="Queremos ser el destino preferido para aquellos que buscan una escapada lujosa y memorable, donde cada momento se vive con elegancia y estilo.&#x0a;&#x0a; " FontAttributes="Italic"/>
+                            <Span Text="En Tuki Hotel, no solo ofrecemos un lugar para quedarse; ofrecemos una experiencia incomparable que perdura en la memoria de nuestros huéspedes mucho después de su partida." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ScrollView>
+</ContentPage>

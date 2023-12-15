@@ -14,6 +14,13 @@
         Title="Reservar Habitacion"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    
+    <ShellContent
+    Title="About Us"
+    ContentTemplate="{DataTemplate views:INFO}"
+   />
+    <ShellContent
+    Title="Informacion de contacto"
+    ContentTemplate="{DataTemplate views:Contacto}"
+   />
 
 </Shell>
